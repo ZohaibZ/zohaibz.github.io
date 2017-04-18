@@ -1,7 +1,7 @@
 ---
-title: First Post
+title: Freshman Year
 featured: /assets/images/pic01.jpg
-layout: post
+layout: courses
 ---
 
 Here We Go...

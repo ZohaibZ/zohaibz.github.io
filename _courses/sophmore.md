@@ -1,7 +1,7 @@
 ---
-title: First Post
+title: Sophmore Year
 featured: /assets/images/pic01.jpg
-layout: post
+layout: courses
 ---
 
 Here We Go...

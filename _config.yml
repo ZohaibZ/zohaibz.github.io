@@ -1,0 +1,5 @@
+name: Zohiab Zahid
+description: My Site
+paginate: 10
+baseurl: 
+gems: [jekyll-paginate]

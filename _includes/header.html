@@ -33,30 +33,17 @@
 			<ul>
 				{% assign current = page.url | downcase | split: '/' %}
 				<li {% if current[1]=='index' %}class="current" {% endif %}><a href="{{ site.baseurl }}/index.html">Home</a></li>
-				<li {% if current[1]=='classes' %}class="current" {% endif %}><a href="{{ site.baseurl }}/classes">Classes</a>
+				<li {% if current[1]=='courses' %}class="current" {% endif %}><a href="{{ site.baseurl }}/courses">Courses</a>
 					<ul>
-						<li><a href="">Freshmen Year</a>
-							<ul>
-								<li><a href="#">Classes</a></li>
-							</ul>
-						</li>
-
-						<li><a href="">Sophmore Year</a>
-							<ul>
-								<li><a href="#">Classes</a></li>
-							</ul>
-						</li>
-
-						<li>
-							<a href="">Junior Year</a>
-							<ul>
-								<li><a href="#">Classes</a></li>
-							</ul>
-						</li>
+						<li {% if current[1]=='Freshmen Year' %}class="current" {% endif %}><a href="{{ site.baseurl }}/freshmen">Freshmen Year</a></li>
+						<li{% if current[1]=='Sophmore Year' %}class="current" {% endif %}><a href="{{ site.baseurl }}/sophmore">Sophmore Year</a></li>
+						<li{% if current[1]=='Junior Year' %}class="current" {% endif %}><a href="{{ site.baseurl }}/junior">Junior Year</a></li>
+						<li{% if current[1]=='Senior Year' %}class="current" {% endif %}><a href="{{ site.baseurl }}/senior">Senior Year</a></li>
 					</ul>
-					<li {% if current[1]=='blogs' %}class="current" {% endif %}><a href="{{ site.baseurl }}/blogs">Blogs</a></li>
-					<li {% if current[1]=='about' %}class="current" {% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
+				<li {% if current[1]=='blogs' %}class="current" {% endif %}><a href="{{ site.baseurl }}/blogs">Blogs</a></li>
+				<li {% if current[1]=='about' %}class="current" {% endif %}><a href="{{ site.baseurl }}/about">About</a></li>
 			</ul>
+
 		</nav>
 
 	</div>
